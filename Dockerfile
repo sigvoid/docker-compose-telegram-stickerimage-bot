@@ -18,7 +18,7 @@ RUN make install
 WORKDIR /
 
 # 安装 lottieconv
-RUN cargo install lottieconv
+RUN cargo install lottieconv --features="clap gif webp"
 
 # 复制项目文件
 COPY . /app
